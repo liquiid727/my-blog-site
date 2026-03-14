@@ -1,0 +1,55 @@
+site_name: Liquiid Journey
+site_description: Public blog exported from a private Obsidian vault.
+site_author: Liquiid
+site_url: https://liquiid727.github.io/my-blog-site/
+repo_name: liquiid727/my-blog-site
+repo_url: https://github.com/liquiid727/my-blog-site
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - content.code.copy
+    - search.highlight
+    - search.suggest
+
+nav:
+  - 首页: index.md
+  - 关于: about.md
+  - 导航:
+      - 博客时间线: blog/index.md
+      - Backend: backend/index.md
+      - Architecture: architecture/index.md
+      - DevOps: devops/index.md
+      - Life: life/index.md
+      - 标签: tags/index.md
+      - 归档: archive/index.md
+
+plugins:
+  - search
+  - rss:
+      match_path: "^(backend|architecture|devops|life)/.*\\.md$"
+      date_from_meta:
+        as_creation: date
+      abstract_chars_count: 180
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+validation:
+  nav:
+    omitted_files: ignore
