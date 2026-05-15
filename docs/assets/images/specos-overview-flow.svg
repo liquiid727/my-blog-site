@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520">
+  <rect width="1400" height="520" fill="#fcfbf7"/>
+  <text x="64" y="78" font-size="38" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#1d3557">SpecOS main flow</text>
+  <path d="M64 92 Q200 106 342 94" stroke="#457b9d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <g font-family="Chalkboard SE, Comic Sans MS, sans-serif" font-size="22" fill="#2b2d42">
+    <rect x="70" y="176" width="162" height="94" rx="18" fill="#ffe5d9" stroke="#d62828" stroke-width="4"/>
+    <text x="96" y="232">raw request</text>
+    <rect x="282" y="176" width="162" height="94" rx="18" fill="#eef7ff" stroke="#457b9d" stroke-width="4"/>
+    <text x="306" y="232">standard spec</text>
+    <rect x="494" y="176" width="162" height="94" rx="18" fill="#fff4dd" stroke="#f4a261" stroke-width="4"/>
+    <text x="542" y="232">targets</text>
+    <rect x="706" y="176" width="188" height="94" rx="18" fill="#e6f7ef" stroke="#2a9d8f" stroke-width="4"/>
+    <text x="742" y="232">agent execution</text>
+    <rect x="944" y="176" width="182" height="94" rx="18" fill="#e9edff" stroke="#5a67d8" stroke-width="4"/>
+    <text x="980" y="232">assets + tests</text>
+    <rect x="1176" y="176" width="160" height="94" rx="18" fill="#f1e9ff" stroke="#8e63ce" stroke-width="4"/>
+    <text x="1210" y="232">delivery</text>
+  </g>
+  <path d="M232 223 H282" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M444 223 H494" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M656 223 H706" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M894 223 H944" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M1126 223 H1176" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="146" y="366" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#d62828">not vibes</text>
+  <text x="396" y="366" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#1d3557">shared truth</text>
+  <text x="548" y="366" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#9a5a00">clear unit of work</text>
+  <text x="768" y="366" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#0b5d53">bounded roles</text>
+  <text x="998" y="366" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2d3a8c">verifiable output</text>
+</svg>

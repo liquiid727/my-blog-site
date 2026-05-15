@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" fill="#fcfbf7"/>
+  <text x="70" y="86" font-size="38" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#1d3557">From "docs for humans" to "context for humans + agents"</text>
+  <path d="M72 102 Q350 122 676 98" stroke="#457b9d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="92" y="182" width="380" height="334" rx="24" fill="#fff4dd" stroke="#f4a261" stroke-width="4"/>
+  <text x="126" y="238" font-size="30" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#9a5a00">Old way</text>
+  <text x="126" y="292" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">one long doc</text>
+  <text x="126" y="334" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">people interpret</text>
+  <text x="126" y="376" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">agents also interpret</text>
+  <text x="126" y="418" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">truth / plan / notes mixed</text>
+  <text x="126" y="460" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#d62828">result: drift and guessing</text>
+  <rect x="730" y="148" width="378" height="418" rx="24" fill="#eef7ff" stroke="#457b9d" stroke-width="4"/>
+  <text x="764" y="204" font-size="30" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#1d3557">New way</text>
+  <rect x="778" y="242" width="278" height="62" rx="16" fill="#eef7ff" stroke="#457b9d" stroke-width="3"/>
+  <text x="822" y="282" font-size="22" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#1d3557">current truth</text>
+  <rect x="778" y="322" width="278" height="62" rx="16" fill="#fff4dd" stroke="#f4a261" stroke-width="3"/>
+  <text x="824" y="362" font-size="22" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#9a5a00">change intent</text>
+  <rect x="778" y="402" width="278" height="62" rx="16" fill="#ffe9e9" stroke="#d62828" stroke-width="3"/>
+  <text x="856" y="442" font-size="22" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#a61b1b">decision why</text>
+  <rect x="778" y="482" width="278" height="62" rx="16" fill="#e6f7ef" stroke="#2a9d8f" stroke-width="3"/>
+  <text x="842" y="522" font-size="22" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#0b5d53">execution trace</text>
+  <path d="M474 352 C560 352 618 352 730 352" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="520" y="330" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">protocol</text>
+</svg>

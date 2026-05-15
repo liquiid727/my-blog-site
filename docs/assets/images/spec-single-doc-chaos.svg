@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" fill="#fcfbf7"/>
+  <text x="72" y="88" font-size="38" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#1d3557">One giant spec = one giant mess</text>
+  <path d="M70 102 Q240 120 410 106" stroke="#457b9d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="88" y="154" width="366" height="430" rx="22" fill="#fffdf8" stroke="#2b2d42" stroke-width="4"/>
+  <text x="124" y="210" font-size="30" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#d62828">Mega Spec.md</text>
+  <text x="122" y="270" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">- current truth</text>
+  <text x="122" y="316" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">- future ideas</text>
+  <text x="122" y="362" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">- hotfix notes</text>
+  <text x="122" y="408" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">- why we chose this</text>
+  <text x="122" y="454" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">- todo / maybe / later</text>
+  <text x="122" y="500" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">- execution scraps</text>
+  <path d="M112 530 Q240 564 382 546" stroke="#e76f51" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <text x="540" y="202" font-size="28" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#1d3557">What happens next?</text>
+  <rect x="540" y="238" width="252" height="86" rx="18" fill="#ffe5d9" stroke="#d62828" stroke-width="4"/>
+  <text x="572" y="292" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#7f1d1d">code != doc</text>
+  <rect x="846" y="238" width="252" height="86" rx="18" fill="#fff3cd" stroke="#f4a261" stroke-width="4"/>
+  <text x="874" y="292" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#7c4700">hotfix lost</text>
+  <rect x="540" y="372" width="252" height="86" rx="18" fill="#dff3e3" stroke="#2a9d8f" stroke-width="4"/>
+  <text x="562" y="426" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#0b4f43">agent guesses</text>
+  <rect x="846" y="372" width="252" height="86" rx="18" fill="#e9edff" stroke="#5a67d8" stroke-width="4"/>
+  <text x="876" y="426" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2d3a8c">nobody trusts it</text>
+  <path d="M454 286 C500 286 510 282 540 282" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M454 392 C502 392 512 406 540 414" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M454 474 C540 494 692 524 844 416" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="818" y="584" font-size="26" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#d62828">all context mixed together</text>
+</svg>

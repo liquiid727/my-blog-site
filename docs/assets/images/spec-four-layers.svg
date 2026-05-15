@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#fcfbf7"/>
+  <text x="64" y="82" font-size="38" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#1d3557">Split the context into layers</text>
+  <path d="M64 96 Q240 112 436 98" stroke="#457b9d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="102" y="150" width="980" height="108" rx="22" fill="#eef7ff" stroke="#457b9d" stroke-width="4"/>
+  <text x="138" y="214" font-size="30" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#1d3557">Current Spec</text>
+  <text x="404" y="214" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">what is true right now</text>
+  <rect x="102" y="290" width="980" height="108" rx="22" fill="#fff4dd" stroke="#f4a261" stroke-width="4"/>
+  <text x="138" y="354" font-size="30" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#9a5a00">Change Spec</text>
+  <text x="404" y="354" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">what this round wants to change</text>
+  <rect x="102" y="430" width="980" height="108" rx="22" fill="#ffe9e9" stroke="#d62828" stroke-width="4"/>
+  <text x="138" y="494" font-size="30" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#a61b1b">ADR</text>
+  <text x="404" y="494" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">why the decision was made</text>
+  <rect x="102" y="570" width="980" height="108" rx="22" fill="#e6f7ef" stroke="#2a9d8f" stroke-width="4"/>
+  <text x="138" y="634" font-size="30" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#0b5d53">Execution</text>
+  <text x="404" y="634" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">what was actually executed and verified</text>
+  <path d="M592 258 L592 290" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M592 398 L592 430" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M592 538 L592 570" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

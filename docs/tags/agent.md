@@ -1,0 +1,18 @@
+---
+title: 标签 - agent
+date: 2026-05-15
+slug: tag-agent
+tags:
+  - agent
+status: published
+visibility: public
+summary: 带有 agent 标签的公开文章。
+---
+
+# agent
+
+共 3 篇文章。
+
+- 2026-05-14 [别再对 AI 说“做得好看一点”了：面向 LLM 的 UI Spec 应该怎么写](../architecture/specos-target-ui-agent-ui-spec-spec-agent-template.md) — 面向 LLM 写前端，核心不是审美词，而是把页面写成状态、行为、反馈和约束，再把它固化成 UI Spec、Target 和 Agent 边界。
+- 2026-05-14 [Spec 不是一份会越写越乱的需求文档](../architecture/spec-不是一份会越写越乱的需求文档.md) — 当需求会变、代码会漂、补丁会插队时，真正能帮 agent 干活的不是一份大而全文档，而是一套分层上下文系统。
+- 2026-05-12 [Hermes Agent 是什么，为什么它像“能放到服务器上自己干活的 AI”](../津津有味/hermes-agent-是什么.md) — 用小白能听懂的方式，讲清 Hermes Agent 为什么最近很火，以及它为什么像一个能长期跑在服务器上的 AI 打工人。

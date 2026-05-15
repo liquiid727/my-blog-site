@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#fcfbf7"/>
+  <text x="64" y="82" font-size="38" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#1d3557">SpecOS starter tree</text>
+  <path d="M64 96 Q220 110 350 96" stroke="#457b9d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="110" y="172" font-size="28" font-family="Menlo, monospace" fill="#2b2d42">specos/</text>
+  <text x="152" y="224" font-size="24" font-family="Menlo, monospace" fill="#2b2d42">targets/</text>
+  <text x="206" y="266" font-size="22" font-family="Menlo, monospace" fill="#2b2d42">&lt;target-name&gt;.md</text>
+  <text x="152" y="326" font-size="24" font-family="Menlo, monospace" fill="#2b2d42">specs/</text>
+  <text x="206" y="368" font-size="22" font-family="Menlo, monospace" fill="#2b2d42">current/product.md</text>
+  <text x="206" y="406" font-size="22" font-family="Menlo, monospace" fill="#2b2d42">current/domain.md</text>
+  <text x="206" y="444" font-size="22" font-family="Menlo, monospace" fill="#2b2d42">current/ui.md</text>
+  <text x="206" y="482" font-size="22" font-family="Menlo, monospace" fill="#2b2d42">changes/&lt;change&gt;.md</text>
+  <text x="206" y="520" font-size="22" font-family="Menlo, monospace" fill="#2b2d42">adr/&lt;adr&gt;.md</text>
+  <text x="152" y="580" font-size="24" font-family="Menlo, monospace" fill="#2b2d42">agents/</text>
+  <text x="206" y="622" font-size="22" font-family="Menlo, monospace" fill="#2b2d42">spec-agent.md</text>
+  <text x="206" y="660" font-size="22" font-family="Menlo, monospace" fill="#2b2d42">ui-agent.md</text>
+  <text x="700" y="224" font-size="24" font-family="Menlo, monospace" fill="#2b2d42">templates/</text>
+  <text x="754" y="266" font-size="22" font-family="Menlo, monospace" fill="#2b2d42">target-template.md</text>
+  <text x="754" y="304" font-size="22" font-family="Menlo, monospace" fill="#2b2d42">ui-spec-template.md</text>
+  <text x="754" y="342" font-size="22" font-family="Menlo, monospace" fill="#2b2d42">change-spec-template.md</text>
+  <text x="754" y="380" font-size="22" font-family="Menlo, monospace" fill="#2b2d42">adr-template.md</text>
+  <path d="M138 176 V672" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M678 176 V392" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

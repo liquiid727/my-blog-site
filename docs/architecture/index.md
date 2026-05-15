@@ -6,13 +6,13 @@ tags:
   - architecture
 status: published
 visibility: public
-summary: 系统设计、知识架构与内容生产流程。
+summary: 系统设计、知识架构与 AI 工程相关的公开文章。
 ---
 
 # Architecture
 
-这里聚合架构设计、知识管理和内容发布流程相关的公开文章。
+这里主要收录系统设计、知识结构、工程边界和长期可维护性相关的公开文章。
 
-- 推荐先看 [博客时间线](../blog/index.md)
-- 再按 [标签页](../tags/index.md) 深入主题
-
+- 如果你想快速了解整体输出，先看 [博客时间线](../blog/index.md)
+- 如果你更关心项目方法，可以回到 [项目页](../projects.md)
+- 新近相关文章可以从 [Spec 不是一份会越写越乱的需求文档](./spec-不是一份会越写越乱的需求文档.md) 和 [SpecOS：当 Spec 开始长出 Target、UI Agent、UI Spec 和 Template](./specos-target-ui-agent-ui-spec-spec-agent-template.md) 开始

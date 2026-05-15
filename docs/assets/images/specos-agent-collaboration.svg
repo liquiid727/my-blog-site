@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+  <rect width="1280" height="760" fill="#fcfbf7"/>
+  <text x="60" y="82" font-size="38" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#1d3557">Target + UI Spec + Agents</text>
+  <path d="M62 96 Q200 110 350 96" stroke="#457b9d" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="502" y="138" width="282" height="110" rx="22" fill="#fff4dd" stroke="#f4a261" stroke-width="4"/>
+  <text x="586" y="204" font-size="30" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#9a5a00">Target</text>
+  <text x="540" y="234" font-size="20" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">goal / scope / acceptance</text>
+  <rect x="144" y="334" width="300" height="150" rx="22" fill="#eef7ff" stroke="#457b9d" stroke-width="4"/>
+  <text x="230" y="396" font-size="30" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#1d3557">UI Spec</text>
+  <text x="184" y="430" font-size="20" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">screen / states / flow / copy</text>
+  <rect x="488" y="334" width="300" height="150" rx="22" fill="#e6f7ef" stroke="#2a9d8f" stroke-width="4"/>
+  <text x="562" y="396" font-size="30" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#0b5d53">UI Agent</text>
+  <text x="520" y="430" font-size="20" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">implements within bounds</text>
+  <rect x="832" y="334" width="300" height="150" rx="22" fill="#ffe9e9" stroke="#d62828" stroke-width="4"/>
+  <text x="884" y="396" font-size="30" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#a61b1b">Spec Agent</text>
+  <text x="864" y="430" font-size="20" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2b2d42">organizes and reviews context</text>
+  <rect x="488" y="568" width="300" height="116" rx="22" fill="#e9edff" stroke="#5a67d8" stroke-width="4"/>
+  <text x="536" y="634" font-size="30" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#2d3a8c">Code / Test / UI</text>
+  <path d="M642 248 V334" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M294 484 C356 544 464 590 488 606" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M638 484 V568" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M982 484 C926 542 816 590 788 606" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="92" y="650" font-size="24" font-family="Chalkboard SE, Comic Sans MS, sans-serif" fill="#d62828">nobody should freelance the goal</text>
+</svg>

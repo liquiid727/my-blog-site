@@ -10,7 +10,12 @@ use_directory_urls: true
 
 theme:
   name: material
+  custom_dir: overrides
   language: zh
+  palette:
+    - scheme: default
+      primary: white
+      accent: teal
   features:
     - navigation.tabs
     - navigation.sections
@@ -20,22 +25,27 @@ theme:
     - search.highlight
     - search.suggest
 
+extra_css:
+  - assets/stylesheets/brand.css
+
 nav:
   - 首页: index.md
+  - 项目: projects.md
   - 关于: about.md
-  - 导航:
+  - 文章:
       - 博客时间线: blog/index.md
-      - Backend: backend/index.md
-      - Architecture: architecture/index.md
-      - DevOps: devops/index.md
-      - Life: life/index.md
+      - 架构: architecture/index.md
+      - 后端: backend/index.md
+      - 工程流程: devops/index.md
+      - 随笔 / 杂谈: essays/index.md
+      - 生活: life/index.md
       - 标签: tags/index.md
       - 归档: archive/index.md
 
 plugins:
   - search
   - rss:
-      match_path: "^(backend|architecture|devops|life)/.*\\.md$"
+      match_path: "^(backend|architecture|devops|essays|life)/.*\\.md$"
       date_from_meta:
         as_creation: date
       abstract_chars_count: 180
