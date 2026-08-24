@@ -4,3 +4,13 @@ __pycache__/
 .venv/
 site/
 
+# Local editor state
+.obsidian/workspace.json
+.obsidian/plugins/time-ruler/data.json
+
+# Local brainstorming scratch output
+.superpowers/brainstorm/
+
+# Local generated/exported scratch files
+output/
+tmp/

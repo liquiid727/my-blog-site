@@ -1,0 +1,30 @@
+{% set src_uri = page.file.src_uri if page and page.file and page.file.src_uri else "" %}
+{% set is_article_page = src_uri and not page.is_homepage and (
+  src_uri.startswith("architecture/") or
+  src_uri.startswith("backend/") or
+  src_uri.startswith("devops/") or
+  src_uri.startswith("essays/") or
+  src_uri.startswith("life/") or
+  src_uri.startswith("津津有味/")
+) and not src_uri.endswith("/index.md") %}
+{% set use_minimal_shell = page and (page.is_homepage or is_article_page) %}
+
+{% if not use_minimal_shell %}
+  {% include "partials/tags.html" %}
+  {% include "partials/actions.html" %}
+{% endif %}
+
+{% if not page.is_homepage and "\u003ch1" not in page.content %}
+  <h1>{{ page.title | d(config.site_name, true) }}</h1>
+{% endif %}
+
+{{ page.content }}
+
+{% if not use_minimal_shell %}
+  {% include "partials/source-file.html" %}
+  {% include "partials/feedback.html" %}
+{% endif %}
+
+{% if is_article_page %}
+  {% include "partials/comments.html" %}
+{% endif %}

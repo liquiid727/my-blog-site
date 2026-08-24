@@ -14,8 +14,17 @@ theme:
   language: zh
   palette:
     - scheme: default
-      primary: white
-      accent: teal
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: 切换夜间模式
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: 切换日间模式
   features:
     - navigation.tabs
     - navigation.sections
@@ -27,6 +36,13 @@ theme:
 
 extra_css:
   - assets/stylesheets/brand.css
+
+extra:
+  giscus:
+    repo: liquiid727/my-blog-site
+    repo_id: R_kgDORmv0DA
+    category: General
+    category_id: DIC_kwDORmv0DM4C6l2B
 
 nav:
   - 首页: index.md

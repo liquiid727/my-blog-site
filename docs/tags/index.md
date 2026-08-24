@@ -1,6 +1,6 @@
 ---
 title: 标签
-date: 2026-05-15
+date: 2026-08-25
 slug: tags
 tags:
   - tags
@@ -13,9 +13,9 @@ summary: 按标签浏览公开文章。
 
 > 此页由 `scripts/export_blog.py` 自动生成。
 
-- [agent](agent.md) (3)
+- [agent](agent.md) (4)
 - [ai](ai.md) (4)
-- [architecture](architecture.md) (5)
+- [architecture](architecture.md) (6)
 - [backend](backend.md) (2)
 - [billing](billing.md) (1)
 - [business](business.md) (1)
@@ -32,9 +32,11 @@ summary: 按标签浏览公开文章。
 - [reward](reward.md) (1)
 - [self-hosted](self-hosted.md) (1)
 - [self-rescue](self-rescue.md) (1)
-- [spec](spec.md) (2)
+- [spec](spec.md) (3)
 - [ui](ui.md) (1)
-- [workflow](workflow.md) (3)
-- [杂谈](杂谈.md) (1)
+- [vibe-coding](vibe-coding.md) (1)
+- [workflow](workflow.md) (4)
+- [杂谈](杂谈.md) (2)
 - [生活感受](生活感受.md) (1)
-- [随笔](随笔.md) (1)
+- [生活的启点](生活的启点.md) (1)
+- [随笔](随笔.md) (2)

@@ -1,0 +1,33 @@
+{% set giscus = config.extra.giscus | default({}, true) %}
+<section class="comments" aria-labelledby="comments-title">
+  <div class="comments__heading">
+    <div>
+      <p class="comments__eyebrow">DISCUSSION</p>
+      <h2 id="comments-title">留下你的看法</h2>
+    </div>
+    <a class="comments__github" href="https://github.com/{{ giscus.repo }}/discussions" rel="noopener">在 GitHub 查看讨论</a>
+  </div>
+
+  {% if giscus.category_id %}
+    <script src="https://giscus.app/client.js"
+      data-repo="{{ giscus.repo }}"
+      data-repo-id="{{ giscus.repo_id }}"
+      data-category="{{ giscus.category }}"
+      data-category-id="{{ giscus.category_id }}"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang="zh-CN"
+      crossorigin="anonymous"
+      async>
+    </script>
+  {% else %}
+    <div class="comments__setup">
+      <p>评论区已经预留，完成一次 giscus 分类配置后即可使用。</p>
+      <a href="https://giscus.app/zh-CN" rel="noopener">打开 giscus 配置页</a>
+    </div>
+  {% endif %}
+</section>

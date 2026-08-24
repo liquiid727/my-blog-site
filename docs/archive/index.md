@@ -1,6 +1,6 @@
 ---
 title: 归档
-date: 2026-05-15
+date: 2026-08-25
 slug: archive
 tags:
   - archive
@@ -12,6 +12,11 @@ summary: 按月份整理的公开文章归档。
 # 归档
 
 > 此页由 `scripts/export_blog.py` 自动生成。
+
+## 2026-06
+
+- 2026-06-30 [Vibe Coding 半年谈：从氛围编程到指挥作战](../architecture/vibe-coding-半年谈-从氛围编程到指挥作战.md) — 半年前还在"氛围编程"，半年后已经在指挥 Agent 小队协同作战。这篇是 Claude Code、Codex 等 AI 编程工具的实战总结——从 Spec 到 AGENTS.md，从上下文管理到 Worktree 并行开发。
+- 2026-06-09 [生活的启点：我的答案](../essays/life-starting-point-my-answer.md) — 写给十八岁自己的回信：从高考作为终点的失重感，走到多年后关于生命有限、意义赋予与欢愉的答案。
 
 ## 2026-05
 

@@ -1,6 +1,6 @@
 ---
 title: 标签 - self-hosted
-date: 2026-05-15
+date: 2026-08-25
 slug: tag-self-hosted
 tags:
   - self-hosted
