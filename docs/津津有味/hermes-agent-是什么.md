@@ -10,9 +10,8 @@ tags:
 status: published
 visibility: public
 summary: 用小白能听懂的方式，讲清 Hermes Agent 为什么最近很火，以及它为什么像一个能长期跑在服务器上的 AI 打工人。
+description: "用小白能听懂的方式，讲清 Hermes Agent 为什么最近很火，以及它为什么像一个能长期跑在服务器上的 AI 打工人。"
 ---
-
-# Hermes Agent 是什么，为什么它像“能放到服务器上自己干活的 AI”
 
 你可以把 Hermes Agent 理解成：**不是一个只会回你消息的 AI，而是一个可以常驻在服务器上、带记忆、会用工具、还能分身协作的 AI 打工人。**
 

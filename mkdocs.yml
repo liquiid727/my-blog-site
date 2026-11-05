@@ -1,5 +1,5 @@
 site_name: Liquiid Journey
-site_description: Public blog exported from a private Obsidian vault.
+site_description: AI 工程、后端系统与长期写作的公开笔记。
 site_author: Liquiid
 site_url: https://liquiid727.github.io/my-blog-site/
 repo_name: liquiid727/my-blog-site
@@ -12,19 +12,21 @@ theme:
   name: material
   custom_dir: overrides
   language: zh
+  font: false
+  favicon: assets/images/favicon.svg
   palette:
-    - scheme: default
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/weather-night
-        name: 切换夜间模式
     - scheme: slate
       primary: custom
       accent: custom
       toggle:
         icon: material/weather-sunny
         name: 切换日间模式
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: 切换夜间模式
   features:
     - navigation.tabs
     - navigation.sections
@@ -55,13 +57,14 @@ nav:
       - 工程流程: devops/index.md
       - 随笔 / 杂谈: essays/index.md
       - 生活: life/index.md
+      - 津津有味: 津津有味/index.md
       - 标签: tags/index.md
       - 归档: archive/index.md
 
 plugins:
   - search
   - rss:
-      match_path: "^(backend|architecture|devops|essays|life)/.*\\.md$"
+      match_path: "^(backend|architecture|devops|essays|life|津津有味)/.*\\.md$"
       date_from_meta:
         as_creation: date
       abstract_chars_count: 180

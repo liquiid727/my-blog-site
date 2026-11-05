@@ -1,7 +1,9 @@
 ---
 title: 标签 - architecture
-date: 2026-08-25
+date: 2026-11-05
 slug: tag-architecture
+hide:
+  - toc
 tags:
   - architecture
 status: published
@@ -9,13 +11,6 @@ visibility: public
 summary: 带有 architecture 标签的公开文章。
 ---
 
-# architecture
+<div class="page-head"><p class="eyebrow">TAG · 06 篇</p><h1>architecture</h1><p class="page-head__lead">共 6 篇文章带有这个标签。</p></div>
 
-共 6 篇文章。
-
-- 2026-06-30 [Vibe Coding 半年谈：从氛围编程到指挥作战](../architecture/vibe-coding-半年谈-从氛围编程到指挥作战.md) — 半年前还在"氛围编程"，半年后已经在指挥 Agent 小队协同作战。这篇是 Claude Code、Codex 等 AI 编程工具的实战总结——从 Spec 到 AGENTS.md，从上下文管理到 Worktree 并行开发。
-- 2026-05-15 [钱包扣费引擎：Redis 管余额，DB 管账单，日志管追凶](../backend/wallet-billing-engine-redis-db-loki.md) — 多连接时长计费不应该靠 tick 流水硬扛，而应该把实时余额、最终账单和审计日志拆成三套职责。
-- 2026-05-15 [奖励发放中台架构：别让活动系统直接改用户资产](../architecture/reward-distribution-platform-architecture.md) — 把签到、广告、任务、活动、订单和后台补偿统一收敛到 Reward Service，用奖励包、幂等、流水、重试和对账能力守住发奖这条业务资金链。
-- 2026-05-14 [别再对 AI 说“做得好看一点”了：面向 LLM 的 UI Spec 应该怎么写](../architecture/specos-target-ui-agent-ui-spec-spec-agent-template.md) — 面向 LLM 写前端，核心不是审美词，而是把页面写成状态、行为、反馈和约束，再把它固化成 UI Spec、Target 和 Agent 边界。
-- 2026-05-14 [Spec 不是一份会越写越乱的需求文档](../architecture/spec-不是一份会越写越乱的需求文档.md) — 当需求会变、代码会漂、补丁会插队时，真正能帮 agent 干活的不是一份大而全文档，而是一套分层上下文系统。
-- 2026-03-14 [从 Private Vault 到 Public Blog 的最小发布流水线](../architecture/private-vault-public-blog-pipeline.md) — 用 Blog/public、白名单资源和导出脚本，把私有 Obsidian 仓库改造成可发布的公开博客。
+<div class="panel panel--list"><div class="log"><a class="log__row" href="../../architecture/vibe-coding-半年谈-从氛围编程到指挥作战/"><time class="log__date" datetime="2026-06-30">06.30</time><div class="log__main"><p class="log__meta"><span class="log__cat">架构</span><span class="log__tags">agent / vibe-coding / architecture</span></p><h3 class="log__title">Vibe Coding 半年谈：从氛围编程到指挥作战</h3><p class="log__summary">半年前还在&quot;氛围编程&quot;，半年后已经在指挥 Agent 小队协同作战。这篇是 Claude Code、Codex 等 AI 编程工具的实战总结——从 Spec 到 AGENTS.md，从上下文管理到 Worktree 并行开发。</p></div><span class="log__read">13 MIN</span><span class="log__arrow" aria-hidden="true">↗</span></a></div><div class="log"><a class="log__row" href="../../backend/wallet-billing-engine-redis-db-loki/"><time class="log__date" datetime="2026-05-15">05.15</time><div class="log__main"><p class="log__meta"><span class="log__cat">后端</span><span class="log__tags">backend / redis / billing</span></p><h3 class="log__title">钱包扣费引擎：Redis 管余额，DB 管账单，日志管追凶</h3><p class="log__summary">多连接时长计费不应该靠 tick 流水硬扛，而应该把实时余额、最终账单和审计日志拆成三套职责。</p></div><span class="log__read">10 MIN</span><span class="log__arrow" aria-hidden="true">↗</span></a></div><div class="log"><a class="log__row" href="../../architecture/reward-distribution-platform-architecture/"><time class="log__date" datetime="2026-05-15">05.15</time><div class="log__main"><p class="log__meta"><span class="log__cat">架构</span><span class="log__tags">architecture / backend / reward</span></p><h3 class="log__title">奖励发放中台架构：别让活动系统直接改用户资产</h3><p class="log__summary">把签到、广告、任务、活动、订单和后台补偿统一收敛到 Reward Service，用奖励包、幂等、流水、重试和对账能力守住发奖这条业务资金链。</p></div><span class="log__read">12 MIN</span><span class="log__arrow" aria-hidden="true">↗</span></a></div><div class="log"><a class="log__row" href="../../architecture/specos-target-ui-agent-ui-spec-spec-agent-template/"><time class="log__date" datetime="2026-05-14">05.14</time><div class="log__main"><p class="log__meta"><span class="log__cat">架构</span><span class="log__tags">architecture / agent / ui</span></p><h3 class="log__title">别再对 AI 说“做得好看一点”了：面向 LLM 的 UI Spec 应该怎么写</h3><p class="log__summary">面向 LLM 写前端，核心不是审美词，而是把页面写成状态、行为、反馈和约束，再把它固化成 UI Spec、Target 和 Agent 边界。</p></div><span class="log__read">5 MIN</span><span class="log__arrow" aria-hidden="true">↗</span></a></div><div class="log"><a class="log__row" href="../../architecture/spec-不是一份会越写越乱的需求文档/"><time class="log__date" datetime="2026-05-14">05.14</time><div class="log__main"><p class="log__meta"><span class="log__cat">架构</span><span class="log__tags">architecture / spec / agent</span></p><h3 class="log__title">Spec 不是一份会越写越乱的需求文档</h3><p class="log__summary">当需求会变、代码会漂、补丁会插队时，真正能帮 agent 干活的不是一份大而全文档，而是一套分层上下文系统。</p></div><span class="log__read">5 MIN</span><span class="log__arrow" aria-hidden="true">↗</span></a></div><div class="log"><a class="log__row" href="../../architecture/private-vault-public-blog-pipeline/"><time class="log__date" datetime="2026-03-14">03.14</time><div class="log__main"><p class="log__meta"><span class="log__cat">架构</span><span class="log__tags">obsidian / mkdocs / github</span></p><h3 class="log__title">从 Private Vault 到 Public Blog 的最小发布流水线</h3><p class="log__summary">用 Blog/public、白名单资源和导出脚本，把私有 Obsidian 仓库改造成可发布的公开博客。</p></div><span class="log__read">1 MIN</span><span class="log__arrow" aria-hidden="true">↗</span></a></div></div>

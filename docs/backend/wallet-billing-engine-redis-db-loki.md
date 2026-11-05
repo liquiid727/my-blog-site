@@ -11,9 +11,8 @@ tags:
 status: published
 visibility: public
 summary: 多连接时长计费不应该靠 tick 流水硬扛，而应该把实时余额、最终账单和审计日志拆成三套职责。
+description: "多连接时长计费不应该靠 tick 流水硬扛，而应该把实时余额、最终账单和审计日志拆成三套职责。"
 ---
-
-# 钱包扣费引擎：Redis 管余额，DB 管账单，日志管追凶
 
 我之前看时长计费，脑子里很容易蹦出一个朴素方案：
 

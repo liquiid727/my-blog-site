@@ -10,9 +10,8 @@ tags:
 status: published
 visibility: public
 summary: 写给被 AI 术语轰炸的普通程序员：我如何把 RAG、Agent、Tools、Memory 和 Spec 重新理解成上下文工程，并开始搭自己的 AI 开发脚手架。
+description: "写给被 AI 术语轰炸的普通程序员：我如何把 RAG、Agent、Tools、Memory 和 Spec 重新理解成上下文工程，并开始搭自己的 AI 开发脚手架。"
 ---
-
-# 一个菜鸟程序员的 AI 自救指南：我给自己造了一套 AI 时代脚手架
 
 有时候我会觉得，程序员这个职业有点像修仙。
 

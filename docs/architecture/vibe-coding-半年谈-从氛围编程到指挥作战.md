@@ -11,9 +11,8 @@ tags:
 status: published
 visibility: public
 summary: 半年前还在"氛围编程"，半年后已经在指挥 Agent 小队协同作战。这篇是 Claude Code、Codex 等 AI 编程工具的实战总结——从 Spec 到 AGENTS.md，从上下文管理到 Worktree 并行开发。
+description: "半年前还在\"氛围编程\"，半年后已经在指挥 Agent 小队协同作战。这篇是 Claude Code、Codex 等 AI 编程工具的实战总结——从 Spec 到 AGENTS.md，从上下文管理到 Worktree 并行开发。"
 ---
-
-# Vibe Coding 半年谈：从氛围编程到指挥作战
 
 > 半年前，我还只是在"氛围编程"；半年后，我已经在指挥一支 Agent 小队协同作战了。这篇文章是我这半年使用 Claude Code、Codex 等 AI 编程工具的实战总结，希望能帮到同样在摸索的你。
 

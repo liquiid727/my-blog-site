@@ -11,58 +11,37 @@
 ) and not src_uri.endswith("/index.md") %}
 {% set use_minimal_shell = page and (page.is_homepage or is_article_page) %}
 
-{% block extrahead %}
-  {{ super() }}
-  <style>
-    .md-main__inner > .md-content--apple {
-      grid-column: 1 / -1;
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    .md-content__inner--apple {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding-top: clamp(1.5rem, 3vw, 2.75rem);
-    }
-
-    .md-content__inner--apple > h1:first-child {
-      margin-top: 0;
-    }
-
-    .md-content__inner--home {
-      max-width: 100%;
-      padding-top: 0;
-    }
-
-    .md-header[data-md-page-layout="minimal"] .md-header__topic + .md-header__topic {
-      display: none;
-    }
-
-    .md-header[data-md-page-layout="minimal"] .md-header__title {
-      margin-left: 0;
-    }
-
-    .md-footer-meta {
-      background-color: var(--md-default-bg-color);
-      border-top: 1px solid rgba(29, 29, 31, 0.08);
-    }
-
-    .md-footer-meta__inner {
-      min-height: 4rem;
-    }
-
-    @media screen and (min-width: 76.25em) {
-      .md-main__inner > .md-content--apple .md-typeset {
-        font-size: 0.9rem;
-      }
-    }
-  </style>
+{% block htmltitle %}
+  {% if page and page.is_homepage %}
+    <title>{{ config.site_name }} — {{ config.site_description }}</title>
+  {% else %}
+    {{ super() }}
+  {% endif %}
 {% endblock %}
 
-{% block site_nav %}
-  {% if not use_minimal_shell %}
-    {{ super() }}
+{% block extrahead %}
+  {{ super() }}
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark light">
+  {% if page and page.meta %}
+    {% set page_summary = page.meta.summary or config.site_description %}
+    <meta property="og:title" content="{{ (page.meta.title or page.title or config.site_name) | e }}">
+    <meta property="og:description" content="{{ page_summary | e }}">
+    <meta property="og:type" content="{{ 'article' if is_article_page else 'website' }}">
+    <meta name="twitter:card" content="summary">
+  {% endif %}
+  {% if is_article_page %}
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var tabs = Array.prototype.slice.call(document.querySelectorAll(".md-tabs__item"));
+        if (!tabs.length || tabs.some(function (tab) { return tab.classList.contains("md-tabs__item--active"); })) return;
+        var blogTab = tabs.filter(function (tab) {
+          var link = tab.querySelector("a");
+          return link && /\/blog\/?$/.test(link.pathname);
+        })[0];
+        if (blogTab) blogTab.classList.add("md-tabs__item--active");
+      });
+    </script>
   {% endif %}
 {% endblock %}
 

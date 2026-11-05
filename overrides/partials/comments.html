@@ -3,31 +3,76 @@
   <div class="comments__heading">
     <div>
       <p class="comments__eyebrow">DISCUSSION</p>
-      <h2 id="comments-title">留下你的看法</h2>
+      <h2 id="comments-title">讨论</h2>
+      <p class="comments__note">评论由 GitHub Discussions 承载，登录 GitHub 账号即可参与。</p>
     </div>
-    <a class="comments__github" href="https://github.com/{{ giscus.repo }}/discussions" rel="noopener">在 GitHub 查看讨论</a>
+    <a class="comments__github" href="https://github.com/{{ giscus.repo }}/discussions" rel="noopener">在 GitHub 查看</a>
   </div>
 
-  {% if giscus.category_id %}
-    <script src="https://giscus.app/client.js"
-      data-repo="{{ giscus.repo }}"
-      data-repo-id="{{ giscus.repo_id }}"
-      data-category="{{ giscus.category }}"
-      data-category-id="{{ giscus.category_id }}"
-      data-mapping="pathname"
-      data-strict="0"
-      data-reactions-enabled="1"
-      data-emit-metadata="0"
-      data-input-position="top"
-      data-theme="preferred_color_scheme"
-      data-lang="zh-CN"
-      crossorigin="anonymous"
-      async>
-    </script>
-  {% else %}
-    <div class="comments__setup">
-      <p>评论区已经预留，完成一次 giscus 分类配置后即可使用。</p>
-      <a href="https://giscus.app/zh-CN" rel="noopener">打开 giscus 配置页</a>
-    </div>
-  {% endif %}
+  <div class="comments__embed">
+    {% if giscus.category_id %}
+      <script src="https://giscus.app/client.js"
+        data-repo="{{ giscus.repo }}"
+        data-repo-id="{{ giscus.repo_id }}"
+        data-category="{{ giscus.category }}"
+        data-category-id="{{ giscus.category_id }}"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+      </script>
+      <script>
+        // client.js is async; flip the theme attribute before it executes so the
+        // iframe never flashes a light widget on the night canvas.
+        (function () {
+          var dark = document.body.getAttribute('data-md-color-scheme') === 'slate';
+          var tag = document.querySelector('script[data-repo="{{ giscus.repo }}"]');
+          if (tag) tag.setAttribute('data-theme', dark ? 'dark' : 'light');
+        })();
+      </script>
+    {% else %}
+      <div class="comments__setup">
+        <p>评论区已经预留，完成一次 giscus 分类配置后即可使用。</p>
+        <a href="https://giscus.app/zh-CN" rel="noopener">打开 giscus 配置页</a>
+      </div>
+    {% endif %}
+  </div>
 </section>
+
+{% if giscus.category_id %}
+  <script>
+    (function () {
+      var lastTheme;
+      var sync = function (force) {
+        var frame = document.querySelector('iframe.giscus-frame');
+        if (!frame) return;
+        var theme = document.body.getAttribute('data-md-color-scheme') === 'slate' ? 'dark' : 'light';
+        if (!force && theme === lastTheme) return;
+        frame.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: theme } } },
+          'https://giscus.app'
+        );
+        lastTheme = theme;
+      };
+      new MutationObserver(function () { sync(false); }).observe(document.body, {
+        attributes: true,
+        attributeFilter: ['data-md-color-scheme']
+      });
+      var embed = document.querySelector('.comments__embed');
+      if (embed) {
+        new MutationObserver(function () { sync(false); }).observe(embed, {
+          childList: true,
+          subtree: true
+        });
+      }
+      window.addEventListener('load', function () { sync(true); });
+      setTimeout(function () { sync(true); }, 1500);
+    })();
+  </script>
+{% endif %}

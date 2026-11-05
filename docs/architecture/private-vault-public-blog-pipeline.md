@@ -10,9 +10,8 @@ tags:
 status: published
 visibility: public
 summary: 用 Blog/public、白名单资源和导出脚本，把私有 Obsidian 仓库改造成可发布的公开博客。
+description: "用 Blog/public、白名单资源和导出脚本，把私有 Obsidian 仓库改造成可发布的公开博客。"
 ---
-
-# 从 Private Vault 到 Public Blog 的最小发布流水线
 
 这套仓库改造的目标很简单：继续把 Obsidian 当作主写作环境，同时只公开明确允许发布的内容。
 

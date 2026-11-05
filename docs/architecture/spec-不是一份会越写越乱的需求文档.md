@@ -10,9 +10,8 @@ tags:
 status: published
 visibility: public
 summary: 当需求会变、代码会漂、补丁会插队时，真正能帮 agent 干活的不是一份大而全文档，而是一套分层上下文系统。
+description: "当需求会变、代码会漂、补丁会插队时，真正能帮 agent 干活的不是一份大而全文档，而是一套分层上下文系统。"
 ---
-
-# Spec 不是一份会越写越乱的需求文档
 
 我以前对 spec 的理解，非常朴素，也非常天真。
 

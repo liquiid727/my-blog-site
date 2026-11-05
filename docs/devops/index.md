@@ -1,5 +1,5 @@
 ---
-title: DevOps
+title: 工程流程
 date: 2026-03-14
 slug: devops
 tags:
@@ -7,11 +7,17 @@ tags:
 status: published
 visibility: public
 summary: 自动化、部署、发布与工程工作流。
+hide:
+  - toc
+description: "自动化、部署、发布与工程工作流。"
 ---
+<div class="page-head">
+  <p class="eyebrow">DEVOPS</p>
+  <h1>工程流程</h1>
+  <p class="page-head__lead">
+    自动构建、部署发布、仓库治理和工程自动化。比起工具清单，
+    更关注一条流程如何稳定地跑很久。
+  </p>
+</div>
 
-# DevOps
-
-这里记录自动构建、部署发布、仓库治理和工程自动化相关的公开实践。
-
-- 文章入口见 [博客时间线](../blog/index.md)
-- 如果你更想先看整体介绍，可以从 [首页](../index.md) 开始
+<div class="empty-note">这一栏还在积累，先去时间线看看其他文章。</div>

@@ -9,102 +9,54 @@ visibility: public
 summary: 面向 AI 工程、后端系统与长期创作的个人站点。
 hide:
   - toc
+description: "面向 AI 工程、后端系统与长期创作的个人站点。"
 ---
-
-<div class="apple-ribbon">
-  A public blog system shaped from a private vault.
-  <a href="architecture/private-vault-public-blog-pipeline/">See the workflow</a>
-</div>
-
-<section class="apple-hero">
-  <p class="apple-section-kicker">Liquiid Journey</p>
-  <h1>Public notes for systems, software, and a life in progress.</h1>
-  <p class="apple-hero-subhead">
-    我把 AI 工程、后端系统、工作流自动化和长期写作放在同一个公开站点里，
-    用项目、文章和持续更新的样本说明我正在做什么。
-  </p>
-  <div class="apple-link-row">
-    <a href="blog/">Read the blog</a>
-    <a href="tags/">Browse topics</a>
-  </div>
-
-  <div class="apple-product-stage">
-    <div class="apple-device apple-device--desktop">
-      <div class="apple-device__header">
-        <span></span><span></span><span></span>
-      </div>
-      <div class="apple-device__body">
-        <div class="apple-device__copy">
-          <p class="apple-device__eyebrow">Private vault. Public output.</p>
-          <h2>一个公开的工程与写作系统</h2>
-          <p>
-            首页先讲清楚关注方向，再把项目、精选文章和长期主题放进同一条公开叙事里，
-            让这个站点更像产品首页，而不是一组松散索引。
-          </p>
-          <ul>
-            <li>AI Engineering / Agent Systems</li>
-            <li>Backend Architecture / Automation</li>
-            <li>Long-form Writing / Public Notes</li>
-          </ul>
-        </div>
-        <div class="apple-device__visual">
-          <div class="apple-mini-stack">
-            <article class="apple-mini-card">
-              <p class="apple-mini-card__eyebrow">Featured</p>
-              <h3>Hermes Agent 是什么</h3>
-              <p>把一类新工具拆成可理解的系统问题。</p>
-            </article>
-            <article class="apple-mini-card apple-mini-card--offset">
-              <p class="apple-mini-card__eyebrow">Latest</p>
-              <h3>Projects</h3>
-              <p>从 API Hub 到 Companion 实验，用样本说明工作方法。</p>
-            </article>
-          </div>
-        </div>
-      </div>
+<div class="hero">
+  <div class="hero__copy">
+    <p class="eyebrow">PRIVATE VAULT · PUBLIC NOTES</p>
+    <h1 class="hero__title">Systems, software,<br>and a life in progress.</h1>
+    <p class="hero__lead">
+      我在这里公开 AI 工程、后端系统与长期写作的笔记：把项目里真正解决过的问题写清楚，
+      也把生活里值得留下的部分写下来。
+    </p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="blog/">浏览全部文章 <span aria-hidden="true">↗</span></a>
+      <a class="btn" href="feed_rss_created.xml">RSS 订阅</a>
     </div>
   </div>
-</section>
+  <aside class="hero__panel panel panel--glass">
+    <p class="panel__label">INDEX / 2026</p>
+    <div class="stats"><div class="stat"><strong>11</strong><span>篇文章</span></div><div class="stat"><strong>27</strong><span>个标签</span></div><div class="stat"><strong>05</strong><span>个主题</span></div></div>
+    <dl class="facts">
+      <div><dt>最近更新</dt><dd>2026.06.30</dd></div>
+      <div><dt>评论</dt><dd>GitHub Discussions</dd></div>
+      <div><dt>发布</dt><dd>GitHub Pages</dd></div>
+    </dl>
+  </aside>
+</div>
 
-<section class="apple-band apple-band--gray">
-  <div class="apple-band__inner">
-    <p class="apple-section-kicker">Explore</p>
-    <h2>Topics and projects, arranged like product modules.</h2>
-    <p class="apple-band__copy">
-      重点不是把内容堆满，而是把主要入口做得足够清晰：先看主题，再看项目，
-      再决定是否进入时间线与归档继续阅读。
-    </p>
-  </div>
-</section>
+<div class="section__head">
+  <h2>最新一篇</h2>
+  <a href="blog/">全部时间线 ↗</a>
+</div>
 
-<section class="apple-promo-grid apple-promo-grid--two-up">
-  <article class="apple-promo apple-promo--light">
-    <p class="apple-section-kicker">Architecture</p>
-    <h2>Systems thinking, written clearly.</h2>
-    <p>关注系统边界、发布链路、知识结构与长期可维护性。</p>
-    <a href="architecture/">Explore Architecture</a>
-  </article>
+<article class="lead"><p class="lead__label">LATEST · 架构 · 2026.06.30</p><a class="lead__title" href="architecture/vibe-coding-半年谈-从氛围编程到指挥作战/">Vibe Coding 半年谈：从氛围编程到指挥作战</a><p class="lead__summary">半年前还在&quot;氛围编程&quot;，半年后已经在指挥 Agent 小队协同作战。这篇是 Claude Code、Codex 等 AI 编程工具的实战总结——从 Spec 到 AGENTS.md，从上下文管理到 Worktree 并行开发。</p><div class="lead__foot"><div class="lead__tags"><span class="pill">agent</span><span class="pill">vibe-coding</span><span class="pill">architecture</span><span class="pill">workflow</span></div><a class="btn btn--sm" href="architecture/vibe-coding-半年谈-从氛围编程到指挥作战/">阅读全文 ↗</a></div></article>
 
-  <article class="apple-promo apple-promo--dark">
-    <p class="apple-section-kicker">Projects</p>
-    <h2>Projects that show how I work.</h2>
-    <p>从 API Hub 到桌面 Companion 实验，用项目解释技术方向和产品判断。</p>
-    <a href="projects/">See Projects</a>
-  </article>
-</section>
+<div class="section__head">
+  <h2>最近更新</h2>
+  <a href="archive/">按月归档 ↗</a>
+</div>
 
-<section class="apple-promo-grid apple-promo-grid--two-up">
-  <article class="apple-promo apple-promo--gray">
-    <p class="apple-section-kicker">Featured Article</p>
-    <h2>Hermes Agent 是什么</h2>
-    <p>从可持续运行的 Agent 系统讲起，用更容易理解的方式拆开这类新工具。</p>
-    <a href="津津有味/hermes-agent-是什么/">Read Article</a>
-  </article>
+<div class="panel panel--list"><div class="log log--compact"><a class="log__row" href="essays/life-starting-point-my-answer/"><time class="log__date" datetime="2026-06-09">06.09</time><div class="log__main"><p class="log__meta"><span class="log__cat">随笔</span><span class="log__tags">生活的启点 / 随笔 / 杂谈</span></p><h3 class="log__title">生活的启点：我的答案</h3></div><span class="log__read">4 MIN</span><span class="log__arrow" aria-hidden="true">↗</span></a></div><div class="log log--compact"><a class="log__row" href="backend/wallet-billing-engine-redis-db-loki/"><time class="log__date" datetime="2026-05-15">05.15</time><div class="log__main"><p class="log__meta"><span class="log__cat">后端</span><span class="log__tags">backend / redis / billing</span></p><h3 class="log__title">钱包扣费引擎：Redis 管余额，DB 管账单，日志管追凶</h3></div><span class="log__read">10 MIN</span><span class="log__arrow" aria-hidden="true">↗</span></a></div><div class="log log--compact"><a class="log__row" href="architecture/reward-distribution-platform-architecture/"><time class="log__date" datetime="2026-05-15">05.15</time><div class="log__main"><p class="log__meta"><span class="log__cat">架构</span><span class="log__tags">architecture / backend / reward</span></p><h3 class="log__title">奖励发放中台架构：别让活动系统直接改用户资产</h3></div><span class="log__read">12 MIN</span><span class="log__arrow" aria-hidden="true">↗</span></a></div><div class="log log--compact"><a class="log__row" href="architecture/specos-target-ui-agent-ui-spec-spec-agent-template/"><time class="log__date" datetime="2026-05-14">05.14</time><div class="log__main"><p class="log__meta"><span class="log__cat">架构</span><span class="log__tags">architecture / agent / ui</span></p><h3 class="log__title">别再对 AI 说“做得好看一点”了：面向 LLM 的 UI Spec 应该怎么写</h3></div><span class="log__read">5 MIN</span><span class="log__arrow" aria-hidden="true">↗</span></a></div><div class="log log--compact"><a class="log__row" href="architecture/spec-不是一份会越写越乱的需求文档/"><time class="log__date" datetime="2026-05-14">05.14</time><div class="log__main"><p class="log__meta"><span class="log__cat">架构</span><span class="log__tags">architecture / spec / agent</span></p><h3 class="log__title">Spec 不是一份会越写越乱的需求文档</h3></div><span class="log__read">5 MIN</span><span class="log__arrow" aria-hidden="true">↗</span></a></div></div>
 
-  <article class="apple-promo apple-promo--light">
-    <p class="apple-section-kicker">Archive</p>
-    <h2>Browse the timeline, tags, and long-running threads.</h2>
-    <p>如果你想直接进入内容层，可以从时间线、标签页和归档页继续往下看。</p>
-    <a href="blog/">Open Timeline</a>
-  </article>
-</section>
+<div class="section__head">
+  <h2>按主题浏览</h2>
+  <a href="tags/">全部标签 ↗</a>
+</div>
+
+<div class="topics"><a class="topic" href="architecture/"><span class="topic__count">05</span><span class="topic__name">架构<span class="topic__label">ARCHITECTURE</span></span></a><a class="topic" href="backend/"><span class="topic__count">01</span><span class="topic__name">后端<span class="topic__label">BACKEND</span></span></a><a class="topic" href="essays/"><span class="topic__count">02</span><span class="topic__name">随笔<span class="topic__label">ESSAYS</span></span></a><a class="topic" href="life/"><span class="topic__count">02</span><span class="topic__name">生活<span class="topic__label">LIFE</span></span></a><a class="topic" href="津津有味/"><span class="topic__count">01</span><span class="topic__name">津津有味<span class="topic__label">COLUMN</span></span></a><a class="topic" href="tags/"><span class="topic__count">27</span><span class="topic__name">全部标签<span class="topic__label">ALL TOPICS</span></span></a></div>
+
+<p class="colophon-note">
+  这个站点由私有 Obsidian 仓库导出，用 MkDocs Material 构建并发布在 GitHub Pages；
+  评论托管在 GitHub Discussions。公开的只是其中一部分，但足够说明我在做什么。
+</p>

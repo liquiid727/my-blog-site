@@ -1,25 +1,10 @@
-{% set src_uri = page.file.src_uri if page and page.file and page.file.src_uri else "" %}
-{% set section_landing_pages = [
-  "about.md",
-  "projects.md",
-  "blog/index.md",
-  "architecture/index.md",
-  "backend/index.md",
-  "devops/index.md",
-  "life/index.md",
-  "tags/index.md",
-  "archive/index.md"
-] %}
-{% set is_section_landing = src_uri in section_landing_pages %}
-{% set is_article_page = src_uri and not page.is_homepage and not is_section_landing %}
-{% set use_minimal_shell = page and (page.is_homepage or is_article_page) %}
 {% set class = "md-header" %}
 {% if "navigation.tabs.sticky" in features %}
   {% set class = class ~ " md-header--shadow md-header--lifted" %}
 {% elif "navigation.tabs" not in features %}
   {% set class = class ~ " md-header--shadow" %}
 {% endif %}
-<header class="{{ class }}" data-md-component="header"{% if use_minimal_shell %} data-md-page-layout="minimal"{% endif %}>
+<header class="{{ class }}" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
     <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
       {% include "partials/logo.html" %}
@@ -35,17 +20,15 @@
             {{ config.site_name }}
           </span>
         </div>
-        {% if not use_minimal_shell %}
-          <div class="md-header__topic" data-md-component="header-topic">
-            <span class="md-ellipsis">
-              {% if page.meta and page.meta.title %}
-                {{ page.meta.title }}
-              {% else %}
-                {{ page.title }}
-              {% endif %}
-            </span>
-          </div>
-        {% endif %}
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            {% if page.meta and page.meta.title %}
+              {{ page.meta.title }}
+            {% else %}
+              {{ page.title }}
+            {% endif %}
+          </span>
+        </div>
       </div>
     </div>
     {% if config.theme.palette %}
