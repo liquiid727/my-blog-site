@@ -43,6 +43,62 @@
       });
     </script>
   {% endif %}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var dialog = document.createElement("div");
+      dialog.className = "lightbox";
+      dialog.hidden = true;
+      dialog.setAttribute("role", "dialog");
+      dialog.setAttribute("aria-modal", "true");
+      dialog.setAttribute("aria-label", "图片预览");
+      dialog.innerHTML = '<button class="lightbox__close" type="button" aria-label="关闭预览">\u00d7</button><figure class="lightbox__figure"><img alt=""><figcaption></figcaption></figure>';
+      document.body.appendChild(dialog);
+
+      var preview = dialog.querySelector("img");
+      var caption = dialog.querySelector("figcaption");
+      var closeButton = dialog.querySelector(".lightbox__close");
+      var lastFocus = null;
+
+      function open(src, alt) {
+        preview.src = src;
+        preview.alt = alt || "";
+        caption.textContent = alt || "";
+        caption.hidden = !alt;
+        lastFocus = document.activeElement;
+        dialog.hidden = false;
+        document.body.classList.add("lightbox-open");
+        closeButton.focus();
+      }
+
+      function close() {
+        dialog.hidden = true;
+        document.body.classList.remove("lightbox-open");
+        preview.removeAttribute("src");
+        if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
+      }
+
+      document.addEventListener("click", function (event) {
+        var image = event.target.closest ? event.target.closest(".md-typeset img") : null;
+        if (!image || image.closest("a") || image.classList.contains("no-zoom")) return;
+        if (!image.currentSrc && !image.src) return;
+        event.preventDefault();
+        open(image.currentSrc || image.src, image.alt);
+      });
+
+      closeButton.addEventListener("click", close);
+      dialog.addEventListener("click", function (event) {
+        if (event.target === dialog) close();
+      });
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && !dialog.hidden) close();
+      });
+
+      document.querySelectorAll(".md-typeset img").forEach(function (image) {
+        if (!image.hasAttribute("loading")) image.loading = "lazy";
+        if (!image.hasAttribute("decoding")) image.decoding = "async";
+      });
+    });
+  </script>
 {% endblock %}
 
 {% block container %}

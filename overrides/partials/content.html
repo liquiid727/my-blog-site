@@ -49,6 +49,20 @@
     {% endif %}
   </header>
 
+  {% set raw_cover = page.meta.cover if page.meta and page.meta.cover else "" %}
+  {% if raw_cover %}
+    {% set cover_clean = raw_cover | string | replace('img:', '') | replace('../assets/images/blog/', '') | replace('../assets/images/', '') | replace('assets/images/blog/', '') | replace('assets/images/', '') %}
+    {% if raw_cover.startswith('http') or raw_cover.startswith('//') or raw_cover.startswith('/') %}
+      {% set cover_src = raw_cover %}
+    {% else %}
+      {% set cover_src = '../../assets/images/' ~ cover_clean %}
+    {% endif %}
+    <figure class="post-cover">
+      <img src="{{ cover_src }}" alt="{{ page.meta.cover_alt | d(page.title) | e }}" loading="eager" decoding="async">
+      {% if page.meta.cover_alt %}<figcaption>{{ page.meta.cover_alt }}</figcaption>{% endif %}
+    </figure>
+  {% endif %}
+
   <div class="post-body">
     {{ page.content }}
   </div>

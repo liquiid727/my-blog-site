@@ -40,7 +40,7 @@ description: "面向 AI 工程、后端系统与长期创作的个人站点。"
   <a href="blog/">全部时间线 ↗</a>
 </div>
 
-<article class="lead"><p class="lead__label">LATEST · 架构 · 2026.06.30</p><a class="lead__title" href="architecture/vibe-coding-半年谈-从氛围编程到指挥作战/">Vibe Coding 半年谈：从氛围编程到指挥作战</a><p class="lead__summary">半年前还在&quot;氛围编程&quot;，半年后已经在指挥 Agent 小队协同作战。这篇是 Claude Code、Codex 等 AI 编程工具的实战总结——从 Spec 到 AGENTS.md，从上下文管理到 Worktree 并行开发。</p><div class="lead__foot"><div class="lead__tags"><span class="pill">agent</span><span class="pill">vibe-coding</span><span class="pill">architecture</span><span class="pill">workflow</span></div><a class="btn btn--sm" href="architecture/vibe-coding-半年谈-从氛围编程到指挥作战/">阅读全文 ↗</a></div></article>
+<article class="lead"><div class="lead__body"><p class="lead__label">LATEST · 架构 · 2026.06.30</p><a class="lead__title" href="architecture/vibe-coding-半年谈-从氛围编程到指挥作战/">Vibe Coding 半年谈：从氛围编程到指挥作战</a><p class="lead__summary">半年前还在&quot;氛围编程&quot;，半年后已经在指挥 Agent 小队协同作战。这篇是 Claude Code、Codex 等 AI 编程工具的实战总结——从 Spec 到 AGENTS.md，从上下文管理到 Worktree 并行开发。</p><div class="lead__foot"><div class="lead__tags"><span class="pill">agent</span><span class="pill">vibe-coding</span><span class="pill">architecture</span><span class="pill">workflow</span></div><a class="btn btn--sm" href="architecture/vibe-coding-半年谈-从氛围编程到指挥作战/">阅读全文 ↗</a></div></div></article>
 
 <div class="section__head">
   <h2>最近更新</h2>

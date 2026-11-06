@@ -1,6 +1,6 @@
 ---
 title: 标签 - architecture
-date: 2026-11-05
+date: 2026-11-06
 slug: tag-architecture
 hide:
   - toc

@@ -670,9 +670,30 @@ body {
 }
 
 .md-typeset img {
+  display: block;
+  max-width: 100%;
+  height: auto;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: var(--surface);
+  cursor: zoom-in;
+}
+
+.md-typeset figure {
+  margin: 28px 0;
+}
+
+.md-typeset .post-cover {
+  margin: 0 0 40px;
+}
+
+.md-typeset .post-cover img {
+  width: 100%;
+  border-radius: 18px;
+}
+
+.md-typeset .post-cover figcaption {
+  margin-top: 10px;
 }
 
 .md-typeset figure > figcaption,
@@ -1117,6 +1138,27 @@ body {
 .md-typeset .lead:hover {
   border-color: var(--line-strong);
   transform: translateY(-2px);
+}
+
+.md-typeset .lead--with-cover {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: clamp(20px, 3vw, 36px);
+  align-items: center;
+}
+
+.md-typeset .lead__cover {
+  display: block;
+  text-decoration: none;
+}
+
+.md-typeset .lead__cover img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
 }
 
 .md-typeset .lead__label {
@@ -1845,6 +1887,79 @@ body {
 }
 
 /* =========================================================
+   Image lightbox
+   ========================================================= */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.92);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox__figure {
+  margin: 0;
+  max-width: 94vw;
+  text-align: center;
+}
+
+.lightbox__figure img {
+  max-width: 94vw;
+  max-height: 84vh;
+  width: auto;
+  height: auto;
+  border: 1px solid var(--line-strong);
+  border-radius: 18px;
+  background: var(--surface);
+}
+
+.lightbox__caption,
+.lightbox__figure figcaption {
+  margin-top: 14px;
+  color: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.lightbox__close {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lightbox__close:hover {
+  border-color: var(--line-strong);
+  background: var(--surface-2);
+}
+
+[data-md-color-scheme="default"] .lightbox {
+  background: rgba(245, 245, 247, 0.94);
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
+/* =========================================================
    Footer
    ========================================================= */
 
@@ -1997,6 +2112,23 @@ body {
 
   .md-typeset .hero {
     padding-top: 36px;
+  }
+
+  .md-typeset .lead--with-cover {
+    grid-template-columns: 1fr;
+  }
+
+  .lightbox {
+    padding: 12px;
+  }
+
+  .lightbox__close {
+    top: 12px;
+    right: 12px;
+  }
+
+  .lightbox__figure img {
+    max-height: 78vh;
   }
 
   .md-typeset .hero__title {

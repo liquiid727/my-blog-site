@@ -1,6 +1,6 @@
 ---
 title: 标签 - vibe-coding
-date: 2026-11-05
+date: 2026-11-06
 slug: tag-vibe-coding
 hide:
   - toc
