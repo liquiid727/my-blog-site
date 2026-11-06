@@ -33,6 +33,16 @@ mkdocs serve
 
 文章页使用 giscus 对接 GitHub Discussions。首次启用时，先在仓库安装 [giscus GitHub App](https://github.com/apps/giscus)，再打开 [giscus 配置页](https://giscus.app/zh-CN) 获取 `category_id`，填入 `mkdocs.yml` 的 `extra.giscus.category_id`。
 
+## 写作与发布
+
+日常写作在私有仓库的 Obsidian 中完成：Blog Studio 提供新建文章、粘贴图片、封面、frontmatter 检查和导出。发布时执行：
+
+```bash
+python3 scripts/publish_blog_safe.py --push
+```
+
+这只同步站点相关文件，不会重置公开仓库里的其他目录。
+
 ## 内容来源
 
 所有内容由私有仓库中的导出脚本同步而来，请不要直接在这里维护正文。
