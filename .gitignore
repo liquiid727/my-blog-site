@@ -14,3 +14,7 @@ site/
 # Local generated/exported scratch files
 output/
 tmp/
+
+# Local creator-studio workspace output (never part of the blog)
+.creator-studio/
+/projects/
